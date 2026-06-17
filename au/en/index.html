@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex,nofollow">
+    <title>Kia Australia Demo | GTG and EC4W QA</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <script>
+      window.KIA_MARKET = {
+        market: "AU",
+        country: "AU",
+        gtg: { enabled: false, containerId: "GTM-KIAAUQA", path: "/metrics/" },
+        slides: [
+          {
+            eyebrow: "Kia Finance offer",
+            title: "$1,000 Deposit Contribution",
+            copy: "On all in-stock new and demonstrator Kia vehicles with Kia Finance. Ends 30 June 2026.",
+            image: "https://www.kia.com/content/dam/kwcms/au/en/images/main/kia-homepage-main-eofy-pct5.webp",
+            alt: "Kia Australia EOFY offer",
+            primaryText: "Learn more",
+            primaryHref: "#offers",
+            secondaryText: "Set location",
+            secondaryHref: "#location"
+          },
+          {
+            eyebrow: "EOFY value",
+            title: "The Kia Tasman X-Line from $59,990",
+            copy: "Plus $1,000 Deposit Contribution on in-stock new and demonstrator models with Kia Finance.",
+            image: "https://www.kia.com/content/dam/kwcms/au/en/images/main/kia-homepage-main-tasman-xline-pct.webp",
+            alt: "Kia Tasman X-Line",
+            primaryText: "View Offers",
+            primaryHref: "#offers",
+            secondaryText: "Book a Test Drive",
+            secondaryHref: "#conversion"
+          },
+          {
+            eyebrow: "Electric value",
+            title: "Electric Value from $46,990",
+            copy: "Explore national electric offers with a clean lead path for measurement testing.",
+            image: "https://www.kia.com/content/dam/kwcms/au/en/images/main/kia-homepage-main-hot-electric-pct.webp",
+            alt: "Kia EV3 offer",
+            primaryText: "View Offers",
+            primaryHref: "#offers",
+            secondaryText: "Find a Dealer",
+            secondaryHref: "#conversion"
+          },
+          {
+            eyebrow: "Hybrid value",
+            title: "Hybrid Value from $44,490",
+            copy: "A familiar homepage flow for hybrid offer, finance, and dealer-intent events.",
+            image: "https://www.kia.com/content/dam/kwcms/au/en/images/main/kia-homepage-main-hot-hybrid-pct.webp",
+            alt: "Kia Sportage Hybrid offer",
+            primaryText: "View Offers",
+            primaryHref: "#offers",
+            secondaryText: "Build and Price",
+            secondaryHref: "#vehicles"
+          }
+        ]
+      };
+    </script>
+    <script defer src="../../assets/js/site.js"></script>
+  </head>
+  <body>
+    <div class="demo-ribbon">RFP demo environment for GTG/EC4W QA. This is not an official Kia retail site and does not collect real customer data.</div>
+
+    <header class="site-header">
+      <div class="nav-shell">
+        <a class="brand" href="../../index.html" data-track="nav_click" data-cta-name="Kia Demo Home">
+          <img src="https://www.kia.com/content/dam/kwcms/au/en/images/preview/kia-logo-black.webp" alt="Kia">
+          <span class="market-chip">AU</span>
+        </a>
+        <nav class="main-nav" aria-label="Primary">
+          <a href="#vehicles" data-track="nav_click">Vehicles</a>
+          <a href="#offers" data-track="nav_click">Offers</a>
+          <a href="#location" data-track="nav_click">Set Location</a>
+          <a href="#conversion" data-track="nav_click">Book a Test Drive</a>
+        </nav>
+        <div class="nav-actions">
+          <a href="#location" data-track="nav_click" data-cta-name="Set Your Postcode">Set Your Postcode</a>
+          <a class="button secondary desktop-only" href="#conversion" data-track="nav_click" data-cta-name="Find a Dealer">Find a Dealer</a>
+          <button class="icon-button menu-toggle" type="button" data-menu-toggle aria-label="Open menu" aria-expanded="false">Menu</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" data-hero>
+        <div class="hero-media">
+          <img data-hero-image src="https://www.kia.com/content/dam/kwcms/au/en/images/main/kia-homepage-main-eofy-pct5.webp" alt="Kia Australia offer">
+        </div>
+        <div class="hero-content">
+          <p class="eyebrow" data-hero-eyebrow></p>
+          <h1 data-hero-title></h1>
+          <p class="hero-copy" data-hero-copy></p>
+          <div class="hero-ctas">
+            <a class="button light" href="#offers" data-hero-primary data-track="hero_cta_click"></a>
+            <a class="button ghost" href="#location" data-hero-secondary data-track="hero_cta_click"></a>
+          </div>
+        </div>
+        <div class="hero-pager" data-hero-pager></div>
+      </section>
+
+      <section class="section compact" id="location">
+        <div class="lead-panel">
+          <div class="lead-copy">
+            <p class="section-kicker">Set Your Location</p>
+            <h2>Enter your postcode to view appropriate pricing for your area.</h2>
+            <p>This mirrors the Kia Australia homepage pattern while keeping the form non-submitting for QA.</p>
+          </div>
+          <div class="conversion-box">
+            <form>
+              <div class="field">
+                <label for="postcode">Postcode</label>
+                <input id="postcode" value="2000" autocomplete="off">
+              </div>
+              <a class="button" href="#conversion" data-track="location_submit_click" data-cta-name="Set Your Postcode">Set Your Postcode</a>
+              <p class="form-note">Demo-only postcode selector. No location data is stored.</p>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="offers">
+        <div class="section-header">
+          <div>
+            <p class="section-kicker">Current offers</p>
+            <h2>EOFY shopping paths</h2>
+          </div>
+          <p>Offer cards reproduce the campaign-led structure used by Kia Australia for fast conversion QA.</p>
+        </div>
+        <div class="grid three">
+          <article class="feature-card image-card">
+            <img src="https://www.kia.com/content/dam/kwcms/au/en/images/main/kia-homepage-main-eofy-pct5.webp" alt="Kia finance offer">
+            <div class="card-content">
+              <p class="eyebrow">Finance</p>
+              <h3>$1,000 Deposit Contribution</h3>
+              <p>On all in-stock new and demonstrator Kia vehicles.</p>
+              <a class="button light" href="#conversion" data-track="offer_cta_click" data-cta-name="Deposit Contribution Learn More">Learn more</a>
+            </div>
+          </article>
+          <article class="feature-card image-card">
+            <img src="https://www.kia.com/content/dam/kwcms/au/en/images/main/kia-homepage-main-hot-electric-pct.webp" alt="Kia electric value">
+            <div class="card-content">
+              <p class="eyebrow">Electric</p>
+              <h3>Electric Value from $46,990</h3>
+              <p>Designed for EV offer and dealer-intent event testing.</p>
+              <a class="button light" href="#conversion" data-track="offer_cta_click" data-cta-name="Electric Value View Offers">View Offers</a>
+            </div>
+          </article>
+          <article class="feature-card image-card">
+            <img src="https://www.kia.com/content/dam/kwcms/au/en/images/main/kia-homepage-main-hot-hybrid-pct.webp" alt="Kia hybrid value">
+            <div class="card-content">
+              <p class="eyebrow">Hybrid</p>
+              <h3>Hybrid Value from $44,490</h3>
+              <p>Hybrid shopping path with CTA and lead instrumentation.</p>
+              <a class="button light" href="#conversion" data-track="offer_cta_click" data-cta-name="Hybrid Value View Offers">View Offers</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="band">
+        <div class="section" id="vehicles">
+          <div class="section-header">
+            <div>
+              <p class="section-kicker">Explore Kia</p>
+              <h2>Popular models</h2>
+            </div>
+            <p>Focused model tiles keep the page static and lightweight while supporting market-specific conversion actions.</p>
+          </div>
+          <div class="grid three">
+            <article class="vehicle-card">
+              <img src="https://www.kia.com/content/dam/kwcms/au/en/images/main/kia-homepage-main-tasman-xline-pct.webp" alt="Kia Tasman">
+              <div class="vehicle-body">
+                <h3>Tasman X-Line</h3>
+                <p>From $59,990 with offer-led shopping actions.</p>
+                <div class="spec-row">
+                  <div class="spec"><strong>$59,990</strong><span>From</span></div>
+                  <div class="spec"><strong>4x4</strong><span>Utility</span></div>
+                  <div class="spec"><strong>EOFY</strong><span>Offer</span></div>
+                </div>
+                <a class="button secondary" href="#conversion" data-track="vehicle_cta_click" data-cta-name="Tasman Test Drive">Test drive</a>
+              </div>
+            </article>
+            <article class="vehicle-card">
+              <img src="https://www.kia.com/content/dam/kwcms/au/en/images/main/kia-homepage-main-hot-electric-pct.webp" alt="Kia EV3">
+              <div class="vehicle-body">
+                <h3>EV3</h3>
+                <p>Electric value page path for test events.</p>
+                <div class="spec-row">
+                  <div class="spec"><strong>$46,990</strong><span>From</span></div>
+                  <div class="spec"><strong>EV</strong><span>Powertrain</span></div>
+                  <div class="spec"><strong>QA</strong><span>Ready</span></div>
+                </div>
+                <a class="button secondary" href="#conversion" data-track="vehicle_cta_click" data-cta-name="EV3 Find a Dealer">Find dealer</a>
+              </div>
+            </article>
+            <article class="vehicle-card">
+              <img src="https://www.kia.com/content/dam/kwcms/au/en/images/main/kia-homepage-main-hot-hybrid-pct.webp" alt="Kia Sportage Hybrid">
+              <div class="vehicle-body">
+                <h3>Sportage Hybrid</h3>
+                <p>Hybrid offer and dealer lead journey.</p>
+                <div class="spec-row">
+                  <div class="spec"><strong>$44,490</strong><span>From</span></div>
+                  <div class="spec"><strong>HEV</strong><span>Powertrain</span></div>
+                  <div class="spec"><strong>Local</strong><span>Pricing</span></div>
+                </div>
+                <a class="button secondary" href="#conversion" data-track="vehicle_cta_click" data-cta-name="Sportage Hybrid Build and Price">Build and Price</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="media-band">
+        <img src="https://www.kia.com/content/dam/kwcms/au/en/images/main/kia-homepage-main-tasman-xline-pct.webp" alt="Kia Tasman lifestyle">
+        <div class="section">
+          <p class="eyebrow">The whole new levels of peace of mind</p>
+          <h2>Localised shopping, finance, and dealer journeys in one static demo.</h2>
+          <p>Every click can be observed in dataLayer before GTG routing is turned on for a live QA pass.</p>
+        </div>
+      </section>
+
+      <section class="section" id="conversion">
+        <div class="lead-panel">
+          <div class="lead-copy">
+            <p class="section-kicker">GTG / EC4W QA</p>
+            <h2>Book a test drive simulator</h2>
+            <p>Use the sample values only. The form normalises and hashes the data locally, then pushes a <code>generate_lead</code> payload.</p>
+            <ul class="qa-list">
+              <li>Market: AU</li>
+              <li>Prepared gateway path: <code>/metrics/</code></li>
+              <li>No network submission from the static page</li>
+            </ul>
+          </div>
+          <div class="conversion-box">
+            <form data-conversion-form>
+              <div class="form-grid">
+                <div class="field">
+                  <label for="firstName">First name</label>
+                  <input id="firstName" name="firstName" value="Taylor" autocomplete="off">
+                </div>
+                <div class="field">
+                  <label for="lastName">Last name</label>
+                  <input id="lastName" name="lastName" value="Tester" autocomplete="off">
+                </div>
+                <div class="field">
+                  <label for="email">Email</label>
+                  <input id="email" name="email" value="taylor.tester@example.com" autocomplete="off">
+                </div>
+                <div class="field">
+                  <label for="phone">Phone</label>
+                  <input id="phone" name="phone" value="+61400000000" autocomplete="off">
+                </div>
+              </div>
+              <div class="field">
+                <label for="model">Model interest</label>
+                <select id="model" name="model">
+                  <option>Tasman X-Line</option>
+                  <option>EV3</option>
+                  <option>Sportage Hybrid</option>
+                </select>
+              </div>
+              <p class="form-note">QA only. Do not enter real customer information.</p>
+              <button class="button" type="submit" data-track="lead_submit_click" data-cta-name="Book Test Drive">Book test drive event</button>
+              <p class="form-note" data-form-status></p>
+            </form>
+            <pre class="event-log" data-event-log>{ "event": "waiting_for_interaction" }</pre>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="section">
+        <div class="footer-grid">
+          <div>
+            <h3>Kia Australia Demo</h3>
+            <p>Static market page for GTG/EC4W RFP testing, using remote Kia Australia CDN assets.</p>
+          </div>
+          <div>
+            <h3>Vehicles</h3>
+            <p>SUVs<br>Electric<br>Hybrid</p>
+          </div>
+          <div>
+            <h3>Shopping tools</h3>
+            <p>Offers<br>Set Location<br>Book a Test Drive</p>
+          </div>
+          <div>
+            <h3>Demo markets</h3>
+            <p><a href="../../us/en/">United States</a><br><a href="../../in/home.html">India</a><br><a href="../../ca/">Canada</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

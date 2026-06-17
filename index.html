@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex,nofollow">
+    <title>Kia Data Strength Demo | GTG and EC4W QA</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script>
+      window.KIA_MARKET = {
+        market: "GLOBAL_DEMO",
+        country: "",
+        gtg: { enabled: false, containerId: "GTM-KIADEMO", path: "/metrics/" },
+        slides: [
+          {
+            eyebrow: "Kia Global Data Strength Initiative",
+            title: "GTG and EC4W static demo markets",
+            copy: "Four market-style static sites for US, AU, IN, and CA measurement QA on Cloudflare Pages.",
+            image: "https://www.kia.com/content/dam/kia/us/en/home/hero/summer-sales-2026/kia-hp-global-hero-1920-sse.jpg",
+            alt: "Kia vehicle lineup",
+            primaryText: "Open US demo",
+            primaryHref: "us/en/",
+            secondaryText: "Review setup notes",
+            secondaryHref: "docs/cloudflare-gtg-setup.md"
+          }
+        ]
+      };
+    </script>
+    <script defer src="assets/js/site.js"></script>
+  </head>
+  <body>
+    <div class="demo-ribbon">RFP demo environment for GTG/EC4W QA. This is not an official Kia retail site and does not collect real customer data.</div>
+
+    <header class="site-header">
+      <div class="nav-shell">
+        <a class="brand" href="index.html" data-track="nav_click" data-cta-name="Kia Demo Home">
+          <img src="https://www.kia.com/content/dam/kia/us/common/kia_logo_black.svg" alt="Kia">
+          <span class="market-chip">Demo</span>
+        </a>
+        <nav class="main-nav" aria-label="Primary">
+          <a href="us/en/" data-track="nav_click">US</a>
+          <a href="au/en/" data-track="nav_click">AU</a>
+          <a href="in/home.html" data-track="nav_click">IN</a>
+          <a href="ca/" data-track="nav_click">CA</a>
+        </nav>
+        <div class="nav-actions">
+          <a href="#markets" data-track="nav_click" data-cta-name="View Markets">View Markets</a>
+          <a class="button secondary desktop-only" href="docs/cloudflare-gtg-setup.md" data-track="nav_click" data-cta-name="Setup Notes">Setup Notes</a>
+          <button class="icon-button menu-toggle" type="button" data-menu-toggle aria-label="Open menu" aria-expanded="false">Menu</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" data-hero>
+        <div class="hero-media">
+          <img data-hero-image src="https://www.kia.com/content/dam/kia/us/en/home/hero/summer-sales-2026/kia-hp-global-hero-1920-sse.jpg" alt="Kia demo hero">
+        </div>
+        <div class="hero-content">
+          <p class="eyebrow" data-hero-eyebrow></p>
+          <h1 data-hero-title></h1>
+          <p class="hero-copy" data-hero-copy></p>
+          <div class="hero-ctas">
+            <a class="button light" href="us/en/" data-hero-primary data-track="hero_cta_click"></a>
+            <a class="button ghost" href="docs/cloudflare-gtg-setup.md" data-hero-secondary data-track="hero_cta_click"></a>
+          </div>
+        </div>
+        <div class="hero-pager" data-hero-pager></div>
+      </section>
+
+      <section class="section" id="markets">
+        <div class="section-header">
+          <div>
+            <p class="section-kicker">Priority markets</p>
+            <h2>Four static market routes</h2>
+          </div>
+          <p>Each route follows the visible structure of its corresponding Kia market site, with localised CTAs and a safe EC4W test form.</p>
+        </div>
+        <div class="market-switch">
+          <a class="market-card" href="us/en/" data-track="market_card_click" data-cta-name="Open US">
+            <strong>US</strong>
+            <span>Mirrors Kia America homepage patterns: Summer Sticker Sales Event, model discovery, shopping assist, and local price lead.</span>
+          </a>
+          <a class="market-card" href="au/en/" data-track="market_card_click" data-cta-name="Open AU">
+            <strong>AU</strong>
+            <span>Offer-led Kia Australia flow: finance contribution, Tasman, electric and hybrid value, postcode and test drive actions.</span>
+          </a>
+          <a class="market-card" href="in/home.html" data-track="market_card_click" data-cta-name="Open IN">
+            <strong>IN</strong>
+            <span>Kia India-style model carousel, Explore The Range, journey CTAs, brand and mobility sections.</span>
+          </a>
+          <a class="market-card" href="ca/" data-track="market_card_click" data-cta-name="Open CA">
+            <strong>CA</strong>
+            <span>Kia Canada-style EV banners, featured vehicle lifestyle cards, shopping tools, and owner service surfaces.</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="band">
+        <div class="section">
+          <div class="section-header">
+            <div>
+              <p class="section-kicker">Deployment shape</p>
+              <h2>Cloudflare Pages-ready</h2>
+            </div>
+            <p>No build step is required. Upload or connect this directory as a static Pages project, then attach the custom domain when ready.</p>
+          </div>
+          <div class="tools-strip">
+            <a class="tool-card" href="docs/cloudflare-gtg-setup.md" data-track="setup_click" data-cta-name="GTG Notes">
+              <span class="tool-icon">1</span>
+              <h3>GTG notes</h3>
+              <p>Measurement path, GTM snippet switch, and Cloudflare constraint notes.</p>
+            </a>
+            <a class="tool-card" href="us/en/#conversion" data-track="setup_click" data-cta-name="EC4W Simulator">
+              <span class="tool-icon">2</span>
+              <h3>EC4W simulator</h3>
+              <p>Browser-side SHA-256 payload for safe demo leads.</p>
+            </a>
+            <a class="tool-card" href="_headers" data-track="setup_click" data-cta-name="Headers">
+              <span class="tool-icon">3</span>
+              <h3>Noindex headers</h3>
+              <p>Static hosting guardrails for demo-only pages.</p>
+            </a>
+            <a class="tool-card" href="README.md" data-track="setup_click" data-cta-name="README">
+              <span class="tool-icon">4</span>
+              <h3>README</h3>
+              <p>Project routes and deployment steps.</p>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="section">
+        <div class="footer-grid">
+          <div>
+            <h3>Kia RFP Demo</h3>
+            <p>Static Cloudflare Pages site for GTG and EC4W demonstration across priority markets.</p>
+          </div>
+          <div>
+            <h3>Markets</h3>
+            <p><a href="us/en/">US</a><br><a href="au/en/">AU</a><br><a href="in/home.html">IN</a><br><a href="ca/">CA</a></p>
+          </div>
+          <div>
+            <h3>Measurement</h3>
+            <p>Google Tag Gateway<br>Enhanced Conversions for Web<br>dataLayer QA</p>
+          </div>
+          <div>
+            <h3>Domain</h3>
+            <p>Prepared for gyutaekim.store on Cloudflare Pages.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

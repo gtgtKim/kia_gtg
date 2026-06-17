@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex,nofollow">
+    <title>Kia America Demo | GTG and EC4W QA</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <script>
+      window.KIA_MARKET = {
+        market: "US",
+        country: "US",
+        gtg: { enabled: false, containerId: "GTM-KIAUSQA", path: "/metrics/" },
+        slides: [
+          {
+            eyebrow: "Kia Summer Sticker Sales Event",
+            title: "Kia Summer Sticker Sales Event",
+            copy: "K4 excluded from sales event. Event ends 7/6/26. Explore offers across select Kia models.",
+            image: "https://www.kia.com/content/dam/kia/us/en/home/hero/summer-sales-2026/kia-hp-global-hero-1920-sse.jpg",
+            alt: "Kia vehicle lineup for summer sales event",
+            primaryText: "Shop Offers",
+            primaryHref: "#offers",
+            secondaryText: "Build Yours",
+            secondaryHref: "#vehicles"
+          },
+          {
+            eyebrow: "Built for power and space",
+            title: "2027 Telluride Turbo-Hybrid",
+            copy: "Three-row confidence with hybrid performance, family-scale space, and everyday utility.",
+            image: "https://www.kia.com/content/dam/kia/us/en/home2-0/tout-cards/kia-card-tout-telluride-hev-gradient.jpg",
+            alt: "Kia Telluride Turbo-Hybrid",
+            primaryText: "Meet Telluride Hybrid",
+            primaryHref: "#vehicles",
+            secondaryText: "Find Nearby",
+            secondaryHref: "#conversion"
+          },
+          {
+            eyebrow: "Range meets confidence",
+            title: "2026 Sportage Hybrid",
+            copy: "Hybrid efficiency, SUV practicality, and the technology drivers expect from Kia.",
+            image: "https://www.kia.com/content/dam/kia/us/en/home2-0/tout-cards/kia-card-tout-sportage-hev.jpg",
+            alt: "Kia Sportage Hybrid",
+            primaryText: "Meet Sportage Hybrid",
+            primaryHref: "#vehicles",
+            secondaryText: "Get a Local Price",
+            secondaryHref: "#conversion"
+          }
+        ]
+      };
+    </script>
+    <script defer src="../../assets/js/site.js"></script>
+  </head>
+  <body>
+    <div class="demo-ribbon">RFP demo environment for GTG/EC4W QA. This is not an official Kia retail site and does not collect real customer data.</div>
+
+    <header class="site-header">
+      <div class="nav-shell">
+        <a class="brand" href="../../index.html" data-track="nav_click" data-cta-name="Kia Demo Home">
+          <img src="https://www.kia.com/content/dam/kia/us/common/kia_logo_black.svg" alt="Kia">
+          <span class="market-chip">US</span>
+        </a>
+        <nav class="main-nav" aria-label="Primary">
+          <a href="#vehicles" data-track="nav_click">Vehicles</a>
+          <a href="#offers" data-track="nav_click">Shopping Assist</a>
+          <a href="#innovation" data-track="nav_click">Kia Innovation</a>
+          <a href="#conversion" data-track="nav_click">Find a Dealer</a>
+        </nav>
+        <div class="nav-actions">
+          <a href="#conversion" data-track="nav_click" data-cta-name="Get a Local Price">Get a Local Price</a>
+          <a class="button secondary desktop-only" href="#conversion" data-track="nav_click" data-cta-name="Test Drive">Test Drive</a>
+          <button class="icon-button menu-toggle" type="button" data-menu-toggle aria-label="Open menu" aria-expanded="false">Menu</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" data-hero>
+        <div class="hero-media">
+          <img data-hero-image src="https://www.kia.com/content/dam/kia/us/en/home/hero/summer-sales-2026/kia-hp-global-hero-1920-sse.jpg" alt="Kia vehicle lineup">
+        </div>
+        <div class="hero-content">
+          <p class="eyebrow" data-hero-eyebrow></p>
+          <h1 data-hero-title></h1>
+          <p class="hero-copy" data-hero-copy></p>
+          <div class="hero-ctas">
+            <a class="button light" href="#offers" data-hero-primary data-track="hero_cta_click"></a>
+            <a class="button ghost" href="#vehicles" data-hero-secondary data-track="hero_cta_click"></a>
+          </div>
+        </div>
+        <div class="hero-pager" data-hero-pager></div>
+      </section>
+
+      <section class="section compact" id="offers">
+        <div class="tools-strip">
+          <a class="tool-card" href="#conversion" data-track="tool_click" data-cta-name="Offers and Incentives">
+            <span class="tool-icon">1</span>
+            <h3>Offers and Incentives</h3>
+            <p>Find special offers near you.</p>
+          </a>
+          <a class="tool-card" href="#vehicles" data-track="tool_click" data-cta-name="Build Your Kia">
+            <span class="tool-icon">2</span>
+            <h3>Build Your Kia</h3>
+            <p>Configure your next Kia and view pricing.</p>
+          </a>
+          <a class="tool-card" href="#conversion" data-track="tool_click" data-cta-name="Payment Calculator">
+            <span class="tool-icon">3</span>
+            <h3>Payment Calculator</h3>
+            <p>Estimate a monthly payment for QA flows.</p>
+          </a>
+          <a class="tool-card" href="#conversion" data-track="tool_click" data-cta-name="Test Drive">
+            <span class="tool-icon">4</span>
+            <h3>Test Drive</h3>
+            <p>Simulate a lead event without submitting data.</p>
+          </a>
+        </div>
+      </section>
+
+      <section class="section" id="vehicles">
+        <div class="section-header">
+          <div>
+            <p class="section-kicker">Discover the new Kia</p>
+            <h2>Featured models</h2>
+          </div>
+          <p>SUV, hybrid, electric, and sedan tiles mirror the broad discovery pattern on the US homepage.</p>
+        </div>
+        <div class="grid three">
+          <article class="vehicle-card">
+            <img src="https://www.kia.com/content/dam/kia/us/en/home2-0/mtf-carousel/mpv/telluride/my27-telluride-ice-large-middle.png" alt="2027 Kia Telluride">
+            <div class="vehicle-body">
+              <h3>2027 Telluride</h3>
+              <p>Powerful three-row SUV with premium utility.</p>
+              <div class="spec-row">
+                <div class="spec"><strong>$39,190</strong><span>Starting at</span></div>
+                <div class="spec"><strong>274 hp</strong><span>Power up to</span></div>
+                <div class="spec"><strong>22 MPG</strong><span>Comb.</span></div>
+              </div>
+              <a class="button secondary" href="#conversion" data-track="vehicle_cta_click" data-cta-name="Telluride Learn More">Learn more</a>
+            </div>
+          </article>
+          <article class="vehicle-card">
+            <img src="https://www.kia.com/content/dam/kia/us/en/home2-0/mtf-carousel/hybrid-electric/sportage-hev/2026/my26-sportage-hev-large-middle.png" alt="2026 Kia Sportage Hybrid">
+            <div class="vehicle-body">
+              <h3>2026 Sportage Hybrid</h3>
+              <p>Hybrid confidence with everyday SUV capability.</p>
+              <div class="spec-row">
+                <div class="spec"><strong>$30,490</strong><span>Starting at</span></div>
+                <div class="spec"><strong>575 mi</strong><span>Range up to</span></div>
+                <div class="spec"><strong>42 MPG</strong><span>Highway</span></div>
+              </div>
+              <a class="button secondary" href="#conversion" data-track="vehicle_cta_click" data-cta-name="Sportage Hybrid Build Yours">Build yours</a>
+            </div>
+          </article>
+          <article class="vehicle-card">
+            <img src="https://www.kia.com/content/dam/kia/us/en/home2-0/mtf-carousel/sedan/k4/my26-k4-large-middle.png" alt="2026 Kia K4">
+            <div class="vehicle-body">
+              <h3>2026 K4</h3>
+              <p>AWE-INSPIRING AGILITY in a compact sedan.</p>
+              <div class="spec-row">
+                <div class="spec"><strong>$22,290</strong><span>Starting at</span></div>
+                <div class="spec"><strong>190 hp</strong><span>Power up to</span></div>
+                <div class="spec"><strong>33 MPG</strong><span>Comb.</span></div>
+              </div>
+              <a class="button secondary" href="#conversion" data-track="vehicle_cta_click" data-cta-name="K4 Get a Local Price">Get price</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="media-band" id="innovation">
+        <img src="https://www.kia.com/content/dam/kia/us/en/home/flexible-text-banner/1920-flexible-logo-award.jpg" alt="Kia award banner">
+        <div class="section">
+          <p class="eyebrow">Trusted by consumers</p>
+          <h2>Explore Kia models with proof points customers already understand.</h2>
+          <p>The demo keeps the site familiar while exposing clean CTA, model, and lead events for GTG and EC4W QA.</p>
+          <div class="inline-actions">
+            <a class="button light" href="#conversion" data-track="feature_cta_click" data-cta-name="View Recommended">View Recommended</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="conversion">
+        <div class="lead-panel">
+          <div class="lead-copy">
+            <p class="section-kicker">GTG / EC4W QA</p>
+            <h2>Lead event simulator</h2>
+            <p>Use only QA values. The page hashes the sample user data in the browser and pushes a Google Ads Enhanced Conversions-style payload to <code>dataLayer</code>. Nothing is submitted to a server by this static page.</p>
+            <ul class="qa-list">
+              <li>GTG path prepared as <code>/metrics/</code></li>
+              <li>Default mode avoids loading a placeholder GTM container</li>
+              <li>CTA, hero, vehicle, and lead events are visible in the event log</li>
+            </ul>
+          </div>
+          <div class="conversion-box">
+            <form data-conversion-form>
+              <div class="form-grid">
+                <div class="field">
+                  <label for="firstName">First name</label>
+                  <input id="firstName" name="firstName" value="Alex" autocomplete="off">
+                </div>
+                <div class="field">
+                  <label for="lastName">Last name</label>
+                  <input id="lastName" name="lastName" value="Tester" autocomplete="off">
+                </div>
+                <div class="field">
+                  <label for="email">Email</label>
+                  <input id="email" name="email" value="alex.tester@example.com" autocomplete="off">
+                </div>
+                <div class="field">
+                  <label for="phone">Phone</label>
+                  <input id="phone" name="phone" value="+1555010101" autocomplete="off">
+                </div>
+              </div>
+              <div class="field">
+                <label for="model">Model interest</label>
+                <select id="model" name="model">
+                  <option>2027 Telluride</option>
+                  <option>2026 Sportage Hybrid</option>
+                  <option>2026 K4</option>
+                </select>
+              </div>
+              <p class="form-note">QA only. Do not enter real customer information.</p>
+              <button class="button" type="submit" data-track="lead_submit_click" data-cta-name="Generate Lead">Generate lead event</button>
+              <p class="form-note" data-form-status></p>
+            </form>
+            <pre class="event-log" data-event-log>{ "event": "waiting_for_interaction" }</pre>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="section">
+        <div class="footer-grid">
+          <div>
+            <h3>Kia US Demo</h3>
+            <p>Static Cloudflare Pages-ready site for RFP measurement QA. Uses public Kia CDN image URLs as remote references.</p>
+          </div>
+          <div>
+            <h3>Vehicles</h3>
+            <p>SUV / CUV / MPV<br>Hybrid / Electric<br>Sedan</p>
+          </div>
+          <div>
+            <h3>Shopping Assist</h3>
+            <p>Offers<br>Build Your Kia<br>Payment Calculator</p>
+          </div>
+          <div>
+            <h3>Demo markets</h3>
+            <p><a href="../../au/en/">Australia</a><br><a href="../../in/home.html">India</a><br><a href="../../ca/">Canada</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

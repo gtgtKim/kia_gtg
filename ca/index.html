@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex,nofollow">
+    <title>Kia Canada Demo | GTG and EC4W QA</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <script>
+      window.KIA_MARKET = {
+        market: "CA",
+        country: "CA",
+        gtg: { enabled: false, containerId: "GTM-KIACAQA", path: "/metrics/" },
+        slides: [
+          {
+            eyebrow: "Electric mobility",
+            title: "2026 Kia EV4",
+            copy: "A clean home-banner pattern for retail, special offer, and model lead testing.",
+            image: "https://www.kia.ca/content/dam/marketing/content/home/banners/2026-EV4-home-banner.jpg",
+            alt: "2026 Kia EV4",
+            primaryText: "Explore EV4",
+            primaryHref: "#vehicles",
+            secondaryText: "Build and Price",
+            secondaryHref: "#conversion"
+          },
+          {
+            eyebrow: "Upcoming electric SUV",
+            title: "2027 Kia EV5",
+            copy: "Feature-led model discovery with first-party measurement path readiness.",
+            image: "https://www.kia.ca/content/dam/marketing/content/home/banners/2027-EV5-gravity-grey-exterior.jpg",
+            alt: "2027 Kia EV5",
+            primaryText: "Learn More",
+            primaryHref: "#vehicles",
+            secondaryText: "Find a Dealer",
+            secondaryHref: "#conversion"
+          },
+          {
+            eyebrow: "Movement that inspires",
+            title: "Make every drive count.",
+            copy: "Lifestyle and shopping tool events prepared for data strength QA.",
+            image: "https://www.kia.ca/content/dam/marketing/content/home/text-over-media/bg-2.jpg",
+            alt: "Kia Canada lifestyle",
+            primaryText: "View Offers",
+            primaryHref: "#offers",
+            secondaryText: "Book a Test Drive",
+            secondaryHref: "#conversion"
+          }
+        ]
+      };
+    </script>
+    <script defer src="../assets/js/site.js"></script>
+  </head>
+  <body>
+    <div class="demo-ribbon">RFP demo environment for GTG/EC4W QA. This is not an official Kia retail site and does not collect real customer data.</div>
+
+    <header class="site-header">
+      <div class="nav-shell">
+        <a class="brand" href="../index.html" data-track="nav_click" data-cta-name="Kia Demo Home">
+          <img src="https://www.kia.ca/content/dam/marketing/content/common/logo-black.svg" alt="Kia">
+          <span class="market-chip">CA</span>
+        </a>
+        <nav class="main-nav" aria-label="Primary">
+          <a href="#vehicles" data-track="nav_click">Vehicles</a>
+          <a href="#offers" data-track="nav_click">Shopping Tools</a>
+          <a href="#owners" data-track="nav_click">Owners</a>
+          <a href="#conversion" data-track="nav_click">Find a Dealer</a>
+        </nav>
+        <div class="nav-actions">
+          <a href="#conversion" data-track="nav_click" data-cta-name="Find a Dealer">Find a Dealer</a>
+          <a class="button secondary desktop-only" href="#conversion" data-track="nav_click" data-cta-name="Build and Price">Build &amp; Price</a>
+          <button class="icon-button menu-toggle" type="button" data-menu-toggle aria-label="Open menu" aria-expanded="false">Menu</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" data-hero>
+        <div class="hero-media">
+          <img data-hero-image src="https://www.kia.ca/content/dam/marketing/content/home/banners/2026-EV4-home-banner.jpg" alt="Kia Canada hero">
+        </div>
+        <div class="hero-content">
+          <p class="eyebrow" data-hero-eyebrow></p>
+          <h1 data-hero-title></h1>
+          <p class="hero-copy" data-hero-copy></p>
+          <div class="hero-ctas">
+            <a class="button light" href="#vehicles" data-hero-primary data-track="hero_cta_click"></a>
+            <a class="button ghost" href="#conversion" data-hero-secondary data-track="hero_cta_click"></a>
+          </div>
+        </div>
+        <div class="hero-pager" data-hero-pager></div>
+      </section>
+
+      <section class="section compact" id="offers">
+        <div class="tools-strip">
+          <a class="tool-card" href="#conversion" data-track="tool_click" data-cta-name="Build and Price">
+            <span class="tool-icon">1</span>
+            <h3>Build and Price</h3>
+            <p>Configure a model and create shopping intent.</p>
+          </a>
+          <a class="tool-card" href="#conversion" data-track="tool_click" data-cta-name="Book a Test Drive">
+            <span class="tool-icon">2</span>
+            <h3>Book a Test Drive</h3>
+            <p>Generate a QA lead event with test data.</p>
+          </a>
+          <a class="tool-card" href="#conversion" data-track="tool_click" data-cta-name="Find a Dealer">
+            <span class="tool-icon">3</span>
+            <h3>Find a Dealer</h3>
+            <p>Simulate local dealer intent.</p>
+          </a>
+          <a class="tool-card" href="#conversion" data-track="tool_click" data-cta-name="Special Offers">
+            <span class="tool-icon">4</span>
+            <h3>Special Offers</h3>
+            <p>Offer path for Ads conversion QA.</p>
+          </a>
+        </div>
+      </section>
+
+      <section class="section" id="vehicles">
+        <div class="section-header">
+          <div>
+            <p class="section-kicker">Featured vehicles</p>
+            <h2>Explore Kia Canada</h2>
+          </div>
+          <p>Cards use Kia Canada image paths and compact retail content similar to the live homepage.</p>
+        </div>
+        <div class="grid three">
+          <article class="feature-card image-card">
+            <img src="https://www.kia.ca/content/dam/marketing/content/home/lifestyle/2026-sportage-lifestyle.jpg" alt="Kia Sportage">
+            <div class="card-content">
+              <p class="eyebrow">The Every Day, Every Way SUV</p>
+              <h3>Sportage</h3>
+              <p>Retail discovery and model-intent events.</p>
+              <a class="button light" href="#conversion" data-track="vehicle_cta_click" data-cta-name="Sportage Explore">Explore</a>
+            </div>
+          </article>
+          <article class="feature-card image-card">
+            <img src="https://www.kia.ca/content/dam/marketing/content/home/lifestyle/2027-seltos.jpg" alt="Kia Seltos">
+            <div class="card-content">
+              <p class="eyebrow">The All-New Kia Seltos</p>
+              <h3>Seltos</h3>
+              <p>Compact SUV path with lead instrumentation.</p>
+              <a class="button light" href="#conversion" data-track="vehicle_cta_click" data-cta-name="Seltos Build and Price">Build &amp; Price</a>
+            </div>
+          </article>
+          <article class="feature-card image-card">
+            <img src="https://www.kia.ca/content/dam/marketing/content/home/lifestyle/EV9-home-lifestyle.jpg" alt="Kia EV9">
+            <div class="card-content">
+              <p class="eyebrow">The next level of innovation</p>
+              <h3>EV9</h3>
+              <p>Electric SUV browsing and test-drive CTA.</p>
+              <a class="button light" href="#conversion" data-track="vehicle_cta_click" data-cta-name="EV9 Test Drive">Test Drive</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="band" id="owners">
+        <div class="section">
+          <div class="section-header">
+            <div>
+              <p class="section-kicker">Service and support</p>
+              <h2>Ownership actions</h2>
+            </div>
+            <p>Canadian service panels provide additional event surfaces beyond vehicle browsing.</p>
+          </div>
+          <div class="grid four">
+            <article class="feature-card image-card">
+              <img src="https://www.kia.ca/content/dam/marketing/content/home/sas/sas-carnival.jpg" alt="Kia service promotions">
+              <div class="card-content">
+                <h3>Service Promotions</h3>
+                <p>Seasonal maintenance path.</p>
+              </div>
+            </article>
+            <article class="feature-card image-card">
+              <img src="https://www.kia.ca/content/dam/marketing/content/home/sas/sas-sportage-bike.jpg" alt="Kia accessories">
+              <div class="card-content">
+                <h3>Accessories</h3>
+                <p>Your Kia. Your way.</p>
+              </div>
+            </article>
+            <article class="feature-card image-card">
+              <img src="https://www.kia.ca/content/dam/marketing/content/home/sas/Kia-Tire-Experts.jpg" alt="Kia tire experts">
+              <div class="card-content">
+                <h3>Kia Tire Experts</h3>
+                <p>Know your tires.</p>
+              </div>
+            </article>
+            <article class="feature-card image-card">
+              <img src="https://www.kia.ca/content/dam/marketing/content/home/sas/Service-Advantage.jpg" alt="Kia service advantage">
+              <div class="card-content">
+                <h3>Service Advantage</h3>
+                <p>Routine maintenance simplified.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="media-band">
+        <img src="https://www.kia.ca/content/dam/marketing/content/home/featured-vehicles/bg-9.jpg" alt="Kia Canada featured vehicles">
+        <div class="section">
+          <p class="eyebrow">Receive the latest news, special offers and exclusives</p>
+          <h2>A Canadian homepage surface ready for measurement QA.</h2>
+          <p>The demo keeps routes and conversion actions predictable before GTG is mapped to the first-party domain.</p>
+        </div>
+      </section>
+
+      <section class="section" id="conversion">
+        <div class="lead-panel">
+          <div class="lead-copy">
+            <p class="section-kicker">GTG / EC4W QA</p>
+            <h2>Build and price simulator</h2>
+            <p>Use sample values only. The form creates a browser-side hashed payload and pushes it to <code>dataLayer</code>.</p>
+            <ul class="qa-list">
+              <li>Market: CA</li>
+              <li>Prepared gateway path: <code>/metrics/</code></li>
+              <li>Static page; no CRM or dealer submission</li>
+            </ul>
+          </div>
+          <div class="conversion-box">
+            <form data-conversion-form>
+              <div class="form-grid">
+                <div class="field">
+                  <label for="firstName">First name</label>
+                  <input id="firstName" name="firstName" value="Jordan" autocomplete="off">
+                </div>
+                <div class="field">
+                  <label for="lastName">Last name</label>
+                  <input id="lastName" name="lastName" value="Tester" autocomplete="off">
+                </div>
+                <div class="field">
+                  <label for="email">Email</label>
+                  <input id="email" name="email" value="jordan.tester@example.com" autocomplete="off">
+                </div>
+                <div class="field">
+                  <label for="phone">Phone</label>
+                  <input id="phone" name="phone" value="+14165550101" autocomplete="off">
+                </div>
+              </div>
+              <div class="field">
+                <label for="model">Model interest</label>
+                <select id="model" name="model">
+                  <option>EV4</option>
+                  <option>Seltos</option>
+                  <option>Sportage</option>
+                  <option>EV9</option>
+                </select>
+              </div>
+              <p class="form-note">QA only. Do not enter real customer information.</p>
+              <button class="button" type="submit" data-track="lead_submit_click" data-cta-name="Build and Price Lead">Generate build and price event</button>
+              <p class="form-note" data-form-status></p>
+            </form>
+            <pre class="event-log" data-event-log>{ "event": "waiting_for_interaction" }</pre>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="section">
+        <div class="footer-grid">
+          <div>
+            <h3>Kia Canada Demo</h3>
+            <p>Static Canadian market page for GTG/EC4W RFP testing, using remote Kia Canada CDN assets.</p>
+          </div>
+          <div>
+            <h3>Vehicles</h3>
+            <p>EV4<br>Seltos<br>Sportage<br>EV9</p>
+          </div>
+          <div>
+            <h3>Shopping tools</h3>
+            <p>Build and Price<br>Book a Test Drive<br>Special Offers</p>
+          </div>
+          <div>
+            <h3>Demo markets</h3>
+            <p><a href="../us/en/">United States</a><br><a href="../au/en/">Australia</a><br><a href="../in/home.html">India</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

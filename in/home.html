@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex,nofollow">
+    <title>Kia India Demo | GTG and EC4W QA</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <script>
+      window.KIA_MARKET = {
+        market: "IN",
+        country: "IN",
+        gtg: { enabled: false, containerId: "GTM-KIAINQA", path: "/metrics/" },
+        slides: [
+          {
+            eyebrow: "Presenting The 2026 Kia Syros",
+            title: "Made for your world. And everyone in it.",
+            copy: "A product-first hero journey reflecting Kia India's showroom-led homepage.",
+            image: "https://www.kia.com/content/dam/kia2/in/en/our-vehicles/syros/new/banner_d.jpg",
+            alt: "Kia Syros",
+            primaryText: "Know More",
+            primaryHref: "#range",
+            secondaryText: "Book a Test Drive",
+            secondaryHref: "#conversion"
+          },
+          {
+            eyebrow: "The all-new Seltos",
+            title: "Badass. Forever.",
+            copy: "Starting at INR 10 99 000. The original gamechanger is here.",
+            image: "https://www.kia.com/content/dam/kia2/in/en/our-vehicles/new-seltos/seltos_d_1.jpg",
+            alt: "Kia Seltos",
+            primaryText: "Know More",
+            primaryHref: "#range",
+            secondaryText: "Get a Quote",
+            secondaryHref: "#conversion"
+          },
+          {
+            eyebrow: "The Carens Clavis",
+            title: "For epic journeys.",
+            copy: "Family utility, connected features, and dealership intent in one testable page.",
+            image: "https://www.kia.com/content/dam/kia2/in/en/our-vehicles/kia-clavis/clavis_d.jpg",
+            alt: "Kia Carens Clavis",
+            primaryText: "Know More",
+            primaryHref: "#range",
+            secondaryText: "Download Brochure",
+            secondaryHref: "#journey"
+          }
+        ]
+      };
+    </script>
+    <script defer src="../assets/js/site.js"></script>
+  </head>
+  <body>
+    <div class="demo-ribbon">RFP demo environment for GTG/EC4W QA. This is not an official Kia retail site and does not collect real customer data.</div>
+
+    <header class="site-header">
+      <div class="nav-shell">
+        <a class="brand" href="../index.html" data-track="nav_click" data-cta-name="Kia Demo Home">
+          <img src="https://www.kia.com/content/dam/kwp/kr/en/images/logo/kia_logo.svg" alt="Kia">
+          <span class="market-chip">IN</span>
+        </a>
+        <nav class="main-nav" aria-label="Primary">
+          <a href="#range" data-track="nav_click">Cars</a>
+          <a href="#journey" data-track="nav_click">Buy</a>
+          <a href="#brand" data-track="nav_click">Discover Kia</a>
+          <a href="#conversion" data-track="nav_click">Test Drive</a>
+        </nav>
+        <div class="nav-actions">
+          <a href="#conversion" data-track="nav_click" data-cta-name="Get a Quote">Get a Quote</a>
+          <a class="button secondary desktop-only" href="#conversion" data-track="nav_click" data-cta-name="Book Online">Book Online</a>
+          <button class="icon-button menu-toggle" type="button" data-menu-toggle aria-label="Open menu" aria-expanded="false">Menu</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" data-hero>
+        <div class="hero-media">
+          <img data-hero-image src="https://www.kia.com/content/dam/kia2/in/en/our-vehicles/syros/new/banner_d.jpg" alt="Kia India hero">
+        </div>
+        <div class="hero-content">
+          <p class="eyebrow" data-hero-eyebrow></p>
+          <h1 data-hero-title></h1>
+          <p class="hero-copy" data-hero-copy></p>
+          <div class="hero-ctas">
+            <a class="button light" href="#range" data-hero-primary data-track="hero_cta_click"></a>
+            <a class="button ghost" href="#conversion" data-hero-secondary data-track="hero_cta_click"></a>
+          </div>
+        </div>
+        <div class="hero-pager" data-hero-pager></div>
+      </section>
+
+      <section class="section" id="range">
+        <div class="section-header">
+          <div>
+            <p class="section-kicker">The Range</p>
+            <h2>Explore The Range</h2>
+          </div>
+          <p>Range cards mirror Kia India's SUV, MPV, and EV browsing flow with clear model and lead-event attribution.</p>
+        </div>
+        <div class="grid three">
+          <article class="vehicle-card">
+            <img src="https://www.kia.com/content/dam/kia2/in/en/images/home/h-1/suv/seltos.png" alt="Kia Seltos">
+            <div class="vehicle-body">
+              <h3>SELTOS</h3>
+              <p>Bolder, bigger, and unmistakably confident.</p>
+              <div class="spec-row">
+                <div class="spec"><strong>SUV</strong><span>Segment</span></div>
+                <div class="spec"><strong>INR</strong><span>Pricing</span></div>
+                <div class="spec"><strong>QA</strong><span>Ready</span></div>
+              </div>
+              <a class="button secondary" href="#conversion" data-track="vehicle_cta_click" data-cta-name="Seltos Book Test Drive">Book a Test Drive</a>
+            </div>
+          </article>
+          <article class="vehicle-card">
+            <img src="https://www.kia.com/content/dam/kia2/in/en/our-vehicles/syros/new/suv_syros.jpg" alt="Kia Syros">
+            <div class="vehicle-body">
+              <h3>SYROS</h3>
+              <p>Futuristic design and smart technology.</p>
+              <div class="spec-row">
+                <div class="spec"><strong>SUV</strong><span>Segment</span></div>
+                <div class="spec"><strong>2026</strong><span>Model</span></div>
+                <div class="spec"><strong>Lead</strong><span>Event</span></div>
+              </div>
+              <a class="button secondary" href="#conversion" data-track="vehicle_cta_click" data-cta-name="Syros Get a Quote">Get a Quote</a>
+            </div>
+          </article>
+          <article class="vehicle-card">
+            <img src="https://www.kia.com/content/dam/kia2/in/en/images/home/h-1/ev/ev9.png" alt="Kia EV9">
+            <div class="vehicle-body">
+              <h3>EV9</h3>
+              <p>Electric mobility with expansive space.</p>
+              <div class="spec-row">
+                <div class="spec"><strong>EV</strong><span>Segment</span></div>
+                <div class="spec"><strong>Premium</strong><span>Class</span></div>
+                <div class="spec"><strong>Clean</strong><span>Data</span></div>
+              </div>
+              <a class="button secondary" href="#conversion" data-track="vehicle_cta_click" data-cta-name="EV9 Know More">Know More</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="band" id="journey">
+        <div class="section">
+          <div class="section-header">
+            <div>
+              <p class="section-kicker">Start Your Kia Journey</p>
+              <h2>Fast shopping actions</h2>
+            </div>
+            <p>These CTAs represent the high-value events usually selected for EC4W validation.</p>
+          </div>
+          <div class="tools-strip">
+            <a class="tool-card" href="#conversion" data-track="journey_click" data-cta-name="Download Brochure">
+              <span class="tool-icon">1</span>
+              <h3>Download Brochure</h3>
+              <p>Know it all before choosing a model.</p>
+            </a>
+            <a class="tool-card" href="#conversion" data-track="journey_click" data-cta-name="Find a Dealer">
+              <span class="tool-icon">2</span>
+              <h3>Find a Dealer</h3>
+              <p>Locate the nearest Kia dealer now.</p>
+            </a>
+            <a class="tool-card" href="#conversion" data-track="journey_click" data-cta-name="Get a Quote">
+              <span class="tool-icon">3</span>
+              <h3>Get a Quote</h3>
+              <p>Know the precise price as per location.</p>
+            </a>
+            <a class="tool-card" href="#conversion" data-track="journey_click" data-cta-name="Book Online">
+              <span class="tool-icon">4</span>
+              <h3>Book Online</h3>
+              <p>Simulate booking intent without checkout.</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="brand">
+        <div class="section-header">
+          <div>
+            <p class="section-kicker">Know The Brand</p>
+            <h2>Kia in India</h2>
+          </div>
+          <p>Brand and mobility panels mirror the depth of the live homepage without adding dynamic dependencies.</p>
+        </div>
+        <div class="grid four">
+          <article class="feature-card image-card">
+            <img src="https://www.kia.com/content/dam/kia2/in/en/images/home/h-1/brand/Brand-promise.png" alt="Kia brand promise">
+            <div class="card-content">
+              <h3>About Us</h3>
+              <p>Memorable experiences across every journey.</p>
+            </div>
+          </article>
+          <article class="feature-card image-card">
+            <img src="https://www.kia.com/content/dam/kia2/in/en/images/home/h-1/brand/vission.png" alt="Kia vision and values">
+            <div class="card-content">
+              <h3>Vision and Values</h3>
+              <p>Progress through sustainable mobility.</p>
+            </div>
+          </article>
+          <article class="feature-card image-card">
+            <img src="https://www.kia.com/content/dam/kia2/in/en/images/home/h-1/mobility/cpo.jpg" alt="Kia certified pre-owned">
+            <div class="card-content">
+              <h3>Certified Pre-Owned</h3>
+              <p>Ownership confidence and exchange intent.</p>
+            </div>
+          </article>
+          <article class="feature-card image-card">
+            <img src="https://www.kia.com/content/dam/kia2/in/en/images/home/h-1/mobility/kia-connect.png" alt="Kia Connect">
+            <div class="card-content">
+              <h3>Kia Connect 2.0</h3>
+              <p>Connected ownership experience.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="conversion">
+        <div class="lead-panel">
+          <div class="lead-copy">
+            <p class="section-kicker">GTG / EC4W QA</p>
+            <h2>Get a quote simulator</h2>
+            <p>Use only QA values. The form hashes sample user data locally and pushes an Enhanced Conversions-style event to <code>dataLayer</code>.</p>
+            <ul class="qa-list">
+              <li>Market: IN</li>
+              <li>Prepared gateway path: <code>/metrics/</code></li>
+              <li>Static-only page; no backend form capture</li>
+            </ul>
+          </div>
+          <div class="conversion-box">
+            <form data-conversion-form>
+              <div class="form-grid">
+                <div class="field">
+                  <label for="firstName">First name</label>
+                  <input id="firstName" name="firstName" value="Priya" autocomplete="off">
+                </div>
+                <div class="field">
+                  <label for="lastName">Last name</label>
+                  <input id="lastName" name="lastName" value="Tester" autocomplete="off">
+                </div>
+                <div class="field">
+                  <label for="email">Email</label>
+                  <input id="email" name="email" value="priya.tester@example.com" autocomplete="off">
+                </div>
+                <div class="field">
+                  <label for="phone">Phone</label>
+                  <input id="phone" name="phone" value="+919999000000" autocomplete="off">
+                </div>
+              </div>
+              <div class="field">
+                <label for="model">Model interest</label>
+                <select id="model" name="model">
+                  <option>Seltos</option>
+                  <option>Syros</option>
+                  <option>EV9</option>
+                </select>
+              </div>
+              <p class="form-note">QA only. Do not enter real customer information.</p>
+              <button class="button" type="submit" data-track="lead_submit_click" data-cta-name="Get Quote">Get quote event</button>
+              <p class="form-note" data-form-status></p>
+            </form>
+            <pre class="event-log" data-event-log>{ "event": "waiting_for_interaction" }</pre>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="section">
+        <div class="footer-grid">
+          <div>
+            <h3>Kia India Demo</h3>
+            <p>Static homepage-style experience for GTG/EC4W testing, using remote Kia India CDN assets.</p>
+          </div>
+          <div>
+            <h3>Cars</h3>
+            <p>Seltos<br>Syros<br>EV9</p>
+          </div>
+          <div>
+            <h3>Buy</h3>
+            <p>Configure<br>Book Online<br>Test Drive</p>
+          </div>
+          <div>
+            <h3>Demo markets</h3>
+            <p><a href="../us/en/">United States</a><br><a href="../au/en/">Australia</a><br><a href="../ca/">Canada</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
